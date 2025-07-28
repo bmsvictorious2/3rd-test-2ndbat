@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images (1).png">
+</head>
+<body style="background-image: url('images (16).jpeg');">
+    <div class="container">
+        <div class="header">
+            <img src="images (1).png" height="200px" width="200px" alt="">
+            <h1>Tech Skill Vocational Institute</h1>
+        </div>
+        <h1>Test No 3</h1>
+        <div class="name-section">
+            <label for="studentName"><span style="color: rgb(19, 94, 9); font-weight: bolder;">Enter your name:</span></label>
+            <input type="text" id="studentName" placeholder="Your Name">
+        </div>
+
+        <!-- Questions -->
+        <div class="question">
+            <p>1. A company wants to predict next month’s sales using past sales data. Which type of machine learning is most suitable?</p>
+            <input type="checkbox" id="q1a" value="true">
+            <label for="q1a"> Regression</label>
+            <input type="checkbox" id="q1b" value="false">
+            <label for="q1b">Classification</label>
+        </div>
+
+        <div class="question">
+            <p>2. An email system detects whether an email is “spam” or “not spam.” Which type of problem is this?</p>
+            <select id="question2">
+                <option value="">--Select an answer--</option>
+                <option value="Gradient Boosting"> Regression</option>
+                <option value="Convolution">Classification</option>
+                <option value="Tokenization">Dimensionality Reduction</option>
+                <option value="Bagging">Clustering</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <p>3. A retail company groups customers based on their buying habits without predefined labels. Which machine learning technique is this?</p>
+            <div>
+            <input type="radio" name="q3" value="vector"> Regression 
+            </div>
+            <div>
+            <input type="radio" name="q3" value="tokenization">Classification 
+            </div>
+            <div>
+            <input type="radio" name="q3" value="root">Clustering 
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4.A security camera detects and draws bounding boxes around people in real-time. Which technique is being used? </p>
+            <div>
+            <input type="radio" name="q4" value="sentence"> Image Classification
+            </div>
+            <div>
+            <input type="radio" name="q4" value="vector"> OCR
+            </div>
+            <div>
+            <input type="radio" name="q4" value="punctuation">Object Detection
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5.A banking app extracts text from an image of a cheque for digital processing. Which technique is applied? </p>
+            <select id="question5">
+                <option value="">--Select an answer--</option>
+                <option value="Privacy">Object Detection</option>
+                <option value="Accountability">OCR</option>
+                <option value="Transparency">Image Classification</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <p>6. In digital images, what does a pixel represent? </p>
+            <select id="question6">
+                <option value="">--Select an answer--</option>
+                <option value="Explainable AI models"> A full image frame</option>
+                <option value="Data anonymization and encryption">A 3D object in an image</option>
+                <option value="Open access to data">The smallest unit of color in an image</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <p>7.A model labels an uploaded photo as “Cat” or “Dog.” This is an example of:</p>
+            <select id="question7">
+                <option value="">--Select an answer--</option>
+                <option value="entities">Image Classification</option>
+                <option value="sentiment">Object Detection</option>
+                <option value="topics">Segmentation</option>
+                <option value="translate">Clustering</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <p>8. An AI system rejects a loan application without providing any explanation to the user. Which AI principle is not followed?</p>
+            <div>
+            <input type="radio" name="q8" value="summary"> Privacy 
+            </div>
+            <div>
+            <input type="radio" name="q8" value="keywords">  Accountability
+            </div>
+            <div>
+            <input type="radio" name="q8" value="grammar"> Transparency
+            </div>
+        </div>
+
+        <div class="question">
+            <p>9. <img src="download (4).jpeg" alt="" width="100px" height="79px">
+            Which technique is used in the above image?</p>
+            <input type="radio" name="q10" value="face"> Face detection<br>
+            <input type="radio" name="q10" value="object"> Object detection<br>
+            <input type="radio" name="q10" value="ocr"> OCR
+        </div>
+
+        <div class="question">
+            <p>10.An AI chatbot collects users’ personal details but does not inform them how the data will be used. Which principle is violated? </p>
+            <div>
+            <input type="radio" name="q9" value="house">Transparency 
+            </div>
+            <div>
+            <input type="radio" name="q9" value="customers">Privacy 
+            </div>
+            <div>
+            <input type="radio" name="q9" value="spam">Fairness
+            </div>
+        </div>
+
+        <br>
+        <button onclick="checkAnswers()">Submit</button>
+        <p id="result"></p>
+    </div>
+
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
